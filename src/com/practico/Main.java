@@ -63,7 +63,8 @@ public class Main {
     public static void printNameOfLast5Options(){
         System.out.println("Name of last 5 options selected:");
         for(int i=0;i<nameLast5options.length;i++){
-            System.out.println("Option: "+ nameLast5options[i]);
+            if(!nameLast5options[i].equals(null))
+                System.out.println("Option: "+ nameLast5options[i]);
         }
     }
 
